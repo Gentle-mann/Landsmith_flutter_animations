@@ -22,6 +22,7 @@ class _RotatingRectangleState extends State<RotatingRectangle>
     );
     _animation =
         Tween<double>(begin: 0.0, end: pi * 2).animate(_animationController);
+
     _animationController.repeat();
   }
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/rotating_cuboid.dart';
 import 'package:flutter_animations/models.dart';
+import 'package:flutter_animations/rotating_polygon.dart';
 import 'package:flutter_animations/rotating_rectangle.dart';
+import 'package:flutter_animations/tween_builder.dart';
 
 import 'details_page.dart';
 
@@ -53,6 +55,20 @@ class HomePage extends StatelessWidget {
                             builder: (context) => const RotatingCube()));
                       },
                       child: const Text('Rotating Cube'),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const ShapeColorTween()));
+                      },
+                      child: const Text('Shape Tween '),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const RotatingPolygon()));
+                      },
+                      child: const Text('Rotating Polygons'),
                     ),
                   ],
                 ),

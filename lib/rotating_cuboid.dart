@@ -84,7 +84,7 @@ class _RotatingCubeState extends State<RotatingCube>
                         children: [
                           const CustomContainer(
                             color: Colors.amberAccent,
-                            isCuboid: true,
+                            isCuboid: false,
                           ),
                           Transform(
                             alignment: Alignment.center,
@@ -92,7 +92,7 @@ class _RotatingCubeState extends State<RotatingCube>
                               ..translate(Vector3(0, 0, -depth)),
                             child: const CustomContainer(
                               color: Colors.pinkAccent,
-                              isCuboid: true,
+                              isCuboid: false,
                             ),
                           ),
                           Transform(
@@ -100,7 +100,7 @@ class _RotatingCubeState extends State<RotatingCube>
                             transform: Matrix4.identity()..rotateY(pi * 0.5),
                             child: const CustomContainer(
                               color: Colors.blueAccent,
-                              isCuboid: true,
+                              isCuboid: false,
                             ),
                           ),
                           Transform(
@@ -108,7 +108,7 @@ class _RotatingCubeState extends State<RotatingCube>
                             transform: Matrix4.identity()..rotateY(-pi * 0.5),
                             child: const CustomContainer(
                               color: Colors.cyanAccent,
-                              isCuboid: true,
+                              isCuboid: false,
                             ),
                           ),
                           Transform(
@@ -116,7 +116,7 @@ class _RotatingCubeState extends State<RotatingCube>
                             transform: Matrix4.identity()..rotateX(-pi * 0.5),
                             child: const CustomContainer(
                               color: Colors.greenAccent,
-                              isCuboid: true,
+                              isCuboid: false,
                             ),
                           ),
                           Transform(
@@ -124,7 +124,7 @@ class _RotatingCubeState extends State<RotatingCube>
                             transform: Matrix4.identity()..rotateX(pi * 0.5),
                             child: const CustomContainer(
                               color: Colors.limeAccent,
-                              isCuboid: true,
+                              isCuboid: false,
                             ),
                           ),
                         ],
